@@ -70,14 +70,34 @@ public class Vista extends javax.swing.JFrame {
         jCBGenero.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-seleccione-", "Masculino", "Femenino" }));
 
         jBCrear.setText("Crear");
+        jBCrear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBCrearActionPerformed(evt);
+            }
+        });
 
         jBEliminar.setText("Eliminar");
+        jBEliminar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBEliminarActionPerformed(evt);
+            }
+        });
 
         jLabel6.setText("Genero:");
 
         jBEditar.setText("Editar");
+        jBEditar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBEditarActionPerformed(evt);
+            }
+        });
 
         jBBuscar.setText("Buscar");
+        jBBuscar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBBuscarActionPerformed(evt);
+            }
+        });
 
         jBListar.setText("Listar");
 
@@ -173,6 +193,35 @@ public class Vista extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jBCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBCrearActionPerformed
+        // TODO add your handling code here:
+        String cedula = jTFCedula.getText();
+        String nombre = jTFNombre.getText();
+        String apellido = jTFApellido.getText();
+        String edad = jTFEdad.getText();
+        String genero =(String) jCBGenero.getSelectedItem();     
+        
+    }//GEN-LAST:event_jBCrearActionPerformed
+
+    private void jBEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBEliminarActionPerformed
+        // TODO add your handling code here:
+        String cedula = jTFCedula.getText();
+    }//GEN-LAST:event_jBEliminarActionPerformed
+
+    private void jBEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBEditarActionPerformed
+        // TODO add your handling code here:
+         String cedula = jTFCedula.getText();
+        String nombre = jTFNombre.getText();
+        String apellido = jTFApellido.getText();
+        String edad = jTFEdad.getText();
+        String genero =(String) jCBGenero.getSelectedItem();   
+    }//GEN-LAST:event_jBEditarActionPerformed
+
+    private void jBBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBBuscarActionPerformed
+        // TODO add your handling code here:
+        String cedula = jTFCedula.getText();
+    }//GEN-LAST:event_jBBuscarActionPerformed
 
     /**
      * @param args the command line arguments
